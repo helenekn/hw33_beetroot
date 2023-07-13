@@ -35,7 +35,7 @@ let car = {
       this.driver = [name];
    },
    checkDriver(nameDriver) {
-      if (nameDriver == this.driver) {
+      if (this.driver.includes(nameDriver)) {
          console.log("The driver is on the list");
       } else this.driver.push(nameDriver);
    },
@@ -51,7 +51,7 @@ let car = {
 };
 console.log(car.addDriver("Helen"));
 console.log(car.displayData());
-console.log(car.checkDriver("Olga"));
+console.log(car.checkDriver("Helen"));
 console.log(car.displayData());
 console.log(car.calcTimePetrolTravel(100, 500));
 
