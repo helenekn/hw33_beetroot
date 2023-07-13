@@ -51,7 +51,7 @@ let car = {
 };
 console.log(car.addDriver("Helen"));
 console.log(car.displayData());
-console.log(car.checkDriver("Helen"));
+console.log(car.checkDriver("Olga"));
 console.log(car.displayData());
 console.log(car.calcTimePetrolTravel(100, 500));
 
