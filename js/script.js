@@ -31,11 +31,11 @@ let car = {
          }
       }
    },
-   addDriver() {
-      this.driver = [prompt("Enter driver name")];
+   addDriver(name) {
+      this.driver = [name];
    },
    checkDriver(nameDriver) {
-      if (nameDriver === this.driver) {
+      if (nameDriver == this.driver) {
          console.log("The driver is on the list");
       } else this.driver.push(nameDriver);
    },
@@ -49,9 +49,9 @@ let car = {
       console.log(timeTravel, amountOfGas);
    },
 };
-console.log(car.addDriver());
+console.log(car.addDriver("Helen"));
 console.log(car.displayData());
-console.log(car.checkDriver("Helen"));
+console.log(car.checkDriver("Olga"));
 console.log(car.displayData());
 console.log(car.calcTimePetrolTravel(100, 500));
 
